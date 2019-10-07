@@ -1,0 +1,37 @@
+{
+  "uid": 3,
+  "vid": 3,
+  "id": "XSPRAMBLP_4096X32_M16P",
+  "bus_id": "ARMAHBL",
+  "category": "sram",
+  "bridging_to": null,
+  "memory_map": true,
+  "irq": false,
+  "hidden": true,
+  "editor_info": {
+    "attachable": false,
+    "default_placement_level": 0,
+    "color": "teal"
+  },
+  "version": "1.0",
+  "type": "hard",
+  "process": "EFXH018D",
+  "operating_voltages": [
+    1.8
+  ],
+  "top_module": "XSPRAMBLP_4096X32_M16P",
+  "options": [
+    {
+      "id": "mem_size",
+      "name": "Memory Size",
+      "type": "selection",
+      "values": [
+        "16KB",
+        "32KB",
+        "48KB",
+        "64KB"
+      ],
+      "default": 0
+    }
+  ]
+}

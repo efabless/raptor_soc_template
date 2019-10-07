@@ -1,0 +1,23 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "AHBQSPIFI",
+  "bus_id": "ARMAHBL",
+  "category": "uart",
+  "memory_map": true,
+  "irq": false,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "hard",
+  "process": "EFXH018D",
+  "operating_voltages": [
+    3.3
+  ],
+  "top_module": "AHBQSPIFI",
+  "options": [
+
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "AHB2GPIO",
+  "bus_id": "ARMAHBL",
+  "category": "gpio",
+  "bridging_to": null,
+  "memory_map": true,
+  "irq": false,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "soft",
+  "top_module": "AHB2GPIO",
+  "options": [
+    {
+      "id": "pin_size",
+      "name": "Number of pins",
+      "type": "selection",
+      "values": [
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "default_index": 3
+    }
+  ]
+}

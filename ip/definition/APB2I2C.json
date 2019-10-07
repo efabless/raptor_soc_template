@@ -1,0 +1,19 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "APB2I2C",
+  "bus_id": "ARMAPB",
+  "category": "i2c",
+  "memory_map": true,
+  "irq": true,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "soft",
+  "top_module": "APB2I2C",
+  "options": [
+
+  ]
+}

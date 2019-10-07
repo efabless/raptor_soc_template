@@ -1,0 +1,30 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "APBGPIO",
+  "bus_id": "ARMAPB",
+  "category": "gpio",
+  "memory_map": true,
+  "irq": false,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.1",
+  "type": "soft",
+  "top_module": "APBGPIO",
+  "options": [
+    {
+      "id": "pin_size",
+      "name": "Number of pins",
+      "type": "selection",
+      "values": [
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "default_index": 3
+    }
+  ]
+}

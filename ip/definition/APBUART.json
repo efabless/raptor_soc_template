@@ -1,0 +1,19 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "APBUART",
+  "bus_id": "ARMAPB",
+  "category": "uart",
+  "memory_map": true,
+  "irq": true,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "soft",
+  "top_module": "APBUART",
+  "options": [
+
+  ]
+}

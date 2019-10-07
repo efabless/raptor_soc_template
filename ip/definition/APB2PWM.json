@@ -1,0 +1,19 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "APB2PWM",
+  "bus_id": "ARMAPB",
+  "category": "pwm",
+  "memory_map": true,
+  "irq": false,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "soft",
+  "top_module": "APB2PWM",
+  "options": [
+
+  ]
+}

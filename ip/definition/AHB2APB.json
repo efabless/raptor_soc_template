@@ -1,0 +1,20 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "AHB2APB",
+  "bus_id": "ARMAHBL",
+  "category": "apbbridge",
+  "bridging_to": "ARMAPB",
+  "memory_map": true,
+  "irq": false,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "soft",
+  "top_module": "AHB2APB",
+  "options": [
+
+  ]
+}

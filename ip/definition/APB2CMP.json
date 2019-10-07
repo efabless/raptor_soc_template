@@ -1,0 +1,23 @@
+{
+  "uid": 0,
+  "vid": 0,
+  "id": "APB2CMP",
+  "bus_id": "ARMAPB",
+  "category": "comp",
+  "memory_map": true,
+  "irq": false,
+  "hidden": false,
+  "editor_info": {
+    "default_placement_level": 0
+  },
+  "version": "1.0",
+  "type": "hard",
+  "process": "EFXH018D",
+  "operating_voltages": [
+    1.8
+  ],
+  "top_module": "APB2CMP",
+  "options": [
+
+  ]
+}

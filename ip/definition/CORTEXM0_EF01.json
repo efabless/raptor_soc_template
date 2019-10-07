@@ -1,0 +1,20 @@
+{
+  "uid": 1,
+  "vid": 1,
+  "id": "CORTEXM0_EF01",
+  "bus_id": "ARMAHBL",
+  "category": "processor",
+  "memory_map": false,
+  "irq": false,
+  "hidden": true,
+  "editor_info": {
+    "default_placement_level": 0,
+    "color": "teal"
+  },
+  "version": "1.1",
+  "type": "soft",
+  "top_module": "CORTEXM0INTEGRATION",
+  "options": [
+
+  ]
+}
