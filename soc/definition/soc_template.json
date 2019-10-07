@@ -1,0 +1,270 @@
+[
+  {
+    "id": "EFRaptor",
+    "vid": 0,
+    "uid": 0,
+    "name": "Raptor",
+    "bus": "ARMAHBL",
+    "supported_voltages": [
+      1.8,
+      3.3
+    ],
+    "supported_bridges": [
+      "apbbridge"
+    ],
+    "internal_ip": [
+      {
+        "id": "__AHB2ROM",
+        "category": "Memory",
+        "template": "ROM.v",
+        "placable": true,
+        "version": "1.0",
+        "memory_map": true,
+        "irq": false
+      },
+      {
+        "id": "__JTAG",
+        "category": "JTAG",
+        "template": "JTAG_TOP.v",
+        "placable": true,
+        "version": "1.0",
+        "memory_map": false,
+        "irq": false
+      }
+    ],
+    "components": [
+      {
+        "id": "comp0",
+        "ip": "CORTEXM0_EF01",
+        "version": "1.1",
+        "fixed": true,
+        "replacable": false,
+        "origin": "root"
+      },
+      {
+        "id": "comp1",
+        "ip": "AHBCLKCTRL",
+        "version": "1.0",
+        "base_address": 20480,
+        "fixed": true,
+        "replacable": false,
+        "origin": "root"
+      },
+      {
+        "id": "comp2",
+        "ip": "__AHB2ROM",
+        "version": "1.0",
+        "base_address": 0,
+        "fixed": true,
+        "replacable": false,
+        "origin": "comp0"
+      },
+      {
+        "id": "comp3",
+        "ip": "XSPRAMBLP_4096X32_M16P",
+        "version": "1.0",
+        "base_address": 8192,
+        "fixed": true,
+        "replacable": false,
+        "origin": "comp0"
+      },
+      {
+        "id": "comp4",
+        "ip": "AHB2GPIO",
+        "version": "1.0",
+        "base_address": 8192,
+        "irq_line": 1,
+        "fixed": false,
+        "origin": "comp0"
+      },
+      {
+        "id": "comp5",
+        "ip": "AHB2APB",
+        "version": "1.0",
+        "base_address": 16384,
+        "fixed": false,
+        "origin": "comp0"
+      },
+      {
+        "id": "comp6",
+        "ip": "APB2DAC",
+        "version": "1.0",
+        "base_address": 16400,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp7",
+        "ip": "APB2ADC",
+        "version": "1.0",
+        "base_address": 16416,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp8",
+        "ip": "APBI2C",
+        "version": "1.0",
+        "base_address": 16432,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp9",
+        "ip": "APBUART",
+        "version": "1.0",
+        "base_address": 16448,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp10",
+        "ip": "APBUART",
+        "version": "1.0",
+        "base_address": 16640,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp11",
+        "ip": "APBGPIO",
+        "version": "1.0",
+        "base_address": 16464,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp12",
+        "ip": "APB2TMR",
+        "version": "1.0",
+        "base_address": 16480,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp13",
+        "ip": "APB2PWM",
+        "version": "1.0",
+        "base_address": 16496,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp14",
+        "ip": "APB2CMP",
+        "version": "1.0",
+        "base_address": 16512,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp15",
+        "ip": "APBSPI",
+        "version": "1.0",
+        "base_address": 16528,
+        "fixed": false,
+        "origin": "comp5"
+      },
+      {
+        "id": "comp16",
+        "ip": "APBBG",
+        "version": "1.0",
+        "base_address": 16532,
+        "fixed": false,
+        "origin": "comp5"
+      }
+    ],
+    "category_constraints": [
+      {
+        "category": "processor",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "category": "apbbridge",
+        "min": 0,
+        "max": 1
+      },
+      {
+        "category": "clkctrl",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "category": "sram",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "category": "rom",
+        "min": 1,
+        "max": 1
+      },
+      {
+        "category": "io",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "spi",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "dio",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "uart",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "i2c",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "qspifi",
+        "min": 0,
+        "max": 1
+      },
+      {
+        "category": "adc",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "dac",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "timer",
+        "min": 0,
+        "max": 8
+      },
+      {
+        "category": "bg",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "bus_constraints": [
+      {
+        "bus": "ARMAHBL",
+        "min": 4,
+        "max": 16
+      },
+      {
+        "bus": "ARMAPBL",
+        "min": 0,
+        "max": 16
+      }
+    ],
+    "global_options": [
+
+    ]
+  }
+]

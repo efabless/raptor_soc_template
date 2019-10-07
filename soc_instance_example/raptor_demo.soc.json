@@ -1,0 +1,261 @@
+[
+  {
+    "id": "Raptor",
+    "version": "1.6",
+    "name": "Raptor Demo",
+    "components": [
+      {
+        "id": "comp0",
+        "ip": "CORTEXM0_EF01",
+        "version": "1.1",
+        "base_address": null,
+        "irq_line": null,
+        "origin": "root",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp1",
+        "ip": "AHBCLKCTRL",
+        "version": "1.0",
+        "base_address": 20480,
+        "irq_line": null,
+        "origin": "root",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp2",
+        "ip": "__AHB2ROM",
+        "version": "1.0",
+        "base_address": 0,
+        "irq_line": null,
+        "origin": "comp0",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp3",
+        "ip": "XSPRAMBLP_4096X32_M16P",
+        "version": "1.0",
+        "base_address": 8192,
+        "irq_line": null,
+        "origin": "comp0",
+        "selections": [
+          {
+            "id": "mem_size",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "id": "comp4",
+        "ip": "AHB2GPIO",
+        "version": "1.0",
+        "base_address": 8192,
+        "irq_line": 1,
+        "origin": "comp0",
+        "selections": [
+          {
+            "id": "pin_count",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "comp5",
+        "ip": "AHB2APB",
+        "version": "1.0",
+        "base_address": 16384,
+        "irq_line": null,
+        "origin": "comp0",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp6",
+        "ip": "APB2DAC",
+        "version": "1.0",
+        "base_address": 16400,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp7",
+        "ip": "APB2ADC",
+        "version": "1.0",
+        "base_address": 16416,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp8",
+        "ip": "APBI2C",
+        "version": "1.0",
+        "base_address": 16432,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp9",
+        "ip": "APBUART",
+        "version": "1.0",
+        "base_address": 16448,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp10",
+        "ip": "APBUART",
+        "version": "1.0",
+        "base_address": 16640,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp11",
+        "ip": "APBGPIO",
+        "version": "1.0",
+        "base_address": 16464,
+        "origin": "comp5",
+        "selections": [
+          {
+            "id": "pin_count",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "comp12",
+        "ip": "APB2TMR",
+        "version": "1.0",
+        "base_address": 16480,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp13",
+        "ip": "APB2PWM",
+        "version": "1.0",
+        "base_address": 16496,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp14",
+        "ip": "APB2CMP",
+        "version": "1.0",
+        "base_address": 16512,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp15",
+        "ip": "APBSPI",
+        "version": "1.0",
+        "base_address": 16528,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp16",
+        "ip": "APBBG",
+        "version": "1.0",
+        "base_address": 16532,
+        "origin": "comp5",
+        "selections": [
+
+        ]
+      },
+      {
+        "id": "comp17",
+        "ip": "__JTAG",
+        "version": "1.0",
+        "origin": "root",
+        "selections": [
+
+        ]
+      }
+    ],
+    "pins": [
+      {
+        "id": "P0_in",
+        "size": 3,
+        "direction": "input",
+        "external_multiplexer": "jtag_en",
+        "connections": [
+          {
+            "instance_id": "comp9",
+            "port": "RsRx",
+            "lsb_to": 0
+          },
+          {
+            "instance_id": "comp10",
+            "port": "RsRx",
+            "lsb_to": 1
+          },
+          {
+            "instance_id": "comp17",
+            "port": "tms",
+            "lsb_to": 0
+          },
+          {
+            "instance_id": "comp17",
+            "port": "tdi",
+            "lsb_to": 1
+          },
+          {
+            "instance_id": "comp17",
+            "port": "tck",
+            "lsb_to": 2
+          }
+        ]
+      },
+      {
+        "id": "P0_out",
+        "size": 2,
+        "direction": "output",
+        "external_multiplexer": "jtag_en",
+        "connections": [
+          {
+            "instance_id": "comp9",
+            "port": "RsTx",
+            "lsb_to": 0
+          },
+          {
+            "instance_id": "comp10",
+            "port": "RsTx",
+            "lsb_to": 1
+          },
+          {
+            "instance_id": "comp17",
+            "port": "tdo",
+            "lsb_to": 0
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "id": "Unique text ID 🔑",
+  "vid": "Vendor ID 🔗",
+  "uid": "Creator UNIX ID 🔗",
+  "name": "Human-readable name",
+  "bus": "ID of the bus 🔗",
+  "supported_bridges": [
+
+  ],
+  "supported_voltages": [
+
+  ],
+  "Selection": {
+    "id": "Option ID 🔗",
+    "value": "Value of the option"
+  },
+  "InternalIP": {
+    "name": "ID of the IP, must start with two underscores 🔑",
+    "category": "Category of the IP (optional, primarily for constraints)",
+    "template": "Internal template file associated with that IP",
+    "placable": "Can this IP be placed independently by a user?",
+    "memory_map": "Boolean: Requires memory map",
+    "irq": "Boolean: Requires IRQ line",
+    "version": "Version of this IP 🔑 (can have multiple names with different version)"
+  },
+  "Component": {
+    "id": "ID of the instance 🔑",
+    "ip": "ID of the IP 🔗",
+    "version": "Version of the IP to use 🔗",
+    "base_address": "ip[id].memory_map != null ? The base address for this component : null",
+    "irq_line": "ip[id].irq != null ? The irq line for this component (optional) : null",
+    "selections": [
+
+    ],
+    "fixed": "If false, this component cannot be removed.",
+    "replacable": "If this component is fixed, replacable allows it to be swapped with a different IP of the same category and an identical set of ports.",
+    "origin": "Connection origin for the SoC editor"
+  },
+  "CategoryConstraint": {
+    "category": "ID of the category 🔗🔑",
+    "min": "minimum number of IPs of this category allowed",
+    "max": "maximum number of IPs of this category allowed"
+  },
+  "BusConstraint": {
+    "bus": "ID of the Bus 🔗🔑",
+    "min": "minimum number of IPs of this bus allowed",
+    "max": "maximum number of IPs of this bus allowed"
+  },
+  "Option": {
+    "id": "An ID for this option 🔑",
+    "name": "Friendly name for this option",
+    "type": "enum selection|textbox",
+    "values": "type == selection ? List of options supported : null",
+    "default_index": "type == selection ? The index of the default selected value : null"
+  },
+  "internal_ip": [
+
+  ],
+  "components": [
+
+  ],
+  "category_constraints": [
+
+  ],
+  "bus_constraints": [
+
+  ],
+  "global_options": [
+
+  ]
+}

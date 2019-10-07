@@ -1,0 +1,6 @@
+{
+  "id": "Category ID (text) 🔑",
+  "name": "Human readable name for the category",
+  "og_name": "Legacy OpenGalaxy-compatible name for the category (Optional, defaults to id in all caps)",
+  "kind": "enum master|slave|bridge"
+}

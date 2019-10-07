@@ -1,0 +1,21 @@
+{
+  "id": "Unique text ID 🔑",
+  "vendor_id": "Vendor ID 🔗",
+  "name": "Human-readable name",
+  "type": "enum:multiplexed|tristate",
+  "Signal": {
+    "name": "Name of the signal 🔑",
+    "width": "An expression (NOT A NUMBER)"
+  },
+  "Port": {
+    "name": "Name of the signal 🔗🔑",
+    "association": "enum master|slave 🔑",
+    "direction": "enum input|output|inout"
+  },
+  "signals": [
+
+  ],
+  "ports": [
+
+  ]
+}

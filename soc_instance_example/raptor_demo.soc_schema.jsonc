@@ -1,0 +1,45 @@
+{
+  "Selection": {
+    "id": "Option ID 🔗",
+    "value": "Value of the option"
+  },
+  "Component": {
+    "id": "Unique string ID within the configuration for this component 🔑",
+    "ip": "ID of the IP 🔗",
+    "version": "Version of the IP 🔗",
+    "origin": "Connection origin for the SoC editor",
+    "base_address": "ip[id].memory_map != null ? The base address for this component : null",
+    "irq_line": "ip[id].irq != null ? The irq line for this component (optional) : null",
+    "selections": [
+
+    ]
+  },
+  "Connection": {
+    "instance_id": "ID of the component instance to connect to 🔗",
+    "port": "Port to connect to",
+    "msb_from": "Most significant bit on the port ?? 0",
+    "lsb_from": "Least significant bit on the port ?? 0",
+    "msb_to": "Most significant bit on the pin ?? lsb_to",
+    "lsb_to": "Least significant bit on the pin"
+  },
+  "Pin": {
+    "id": "Verilog identifier for the exposed port 🔑",
+    "size": "Width of the exposed port",
+    "direction": "enum input|output|inout",
+    "external_multiplexer": "Name of external multiplex pin in case of multiple connections to same range. If null, an internal register should be used in case of multiple connections. This option may not be asserted if there are no multiple connections to the same range.",
+    "connections": [
+
+    ]
+  },
+  "id": "ID for the SoC definition 🔑",
+  "name": "Name of the SoC",
+  "components": [
+
+  ],
+  "pins": [
+
+  ],
+  "global_selections": [
+
+  ]
+}

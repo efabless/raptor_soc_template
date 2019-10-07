@@ -1,0 +1,28 @@
+{
+  "id": "Catalog ID 🔑🔗",
+  "bus_id": "Bus ID 🔗 (Optional- fixes IP to only one bus)",
+  "category": "Category ID🔗",
+  "bridging_to": "category.kind == bridge ? Bus ID 🔗: null",
+  "memory_map": "Boolean: Requires memory map",
+  "irq": "Boolean: Requires IRQ line",
+  "hidden": "Boolean",
+  "editor_info": {
+    "default_placement_level": "Default position",
+    "color": "CSS color (Optional)"
+  },
+  "version": "Version of the IP 🔑",
+  "type": "enum soft|hard",
+  "process": "type != soft ? Process name in EF tree 🔗: null",
+  "operating_voltages": "\"type != soft ? [Number] Operating voltage for this IP, in volts : null\"",
+  "top_module": "Name of the top module within this IP",
+  "Option": {
+    "id": "An ID for this option. This ID must be a valid Verilog identifier.",
+    "name": "Friendly name for this option",
+    "type": "enum selection|textbox",
+    "values": "type == selection ? List of options supported : null",
+    "default_index": "type == selection ? The index of the default selected value : null"
+  },
+  "options": [
+
+  ]
+}

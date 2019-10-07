@@ -1,0 +1,96 @@
+[
+  {
+    "id": "core",
+    "name": "Processor",
+    "type": "master"
+  },
+  {
+    "id": "jtag",
+    "name": "JTAG Controller",
+    "type": "slave"
+  },
+  {
+    "id": "apbbridge",
+    "name": "APB Bridge",
+    "type": "bridge"
+  },
+  {
+    "id": "adc",
+    "name": "A2D Converter",
+    "type": "slave"
+  },
+  {
+    "id": "dac",
+    "name": "D2A Converter",
+    "type": "slave"
+  },
+  {
+    "id": "comp",
+    "name": "Comparator",
+    "type": "slave"
+  },
+  {
+    "id": "bg",
+    "name": "Bandgap",
+    "type": "slave"
+  },
+  {
+    "id": "sram",
+    "name": "SRAM",
+    "type": "slave"
+  },
+  {
+    "id": "rom",
+    "name": "ROM",
+    "type": "slave"
+  },
+  {
+    "id": "io",
+    "name": "I/O",
+    "type": "slave"
+  },
+  {
+    "id": "gpio",
+    "name": "GPIO",
+    "type": "slave"
+  },
+  {
+    "id": "dio",
+    "name": "Debug I/O"
+  },
+  {
+    "id": "spi",
+    "name": "SPI Master",
+    "type": "slave"
+  },
+  {
+    "id": "qspifi",
+    "name": "QSPI Flash Controller",
+    "type": "slave"
+  },
+  {
+    "id": "uart",
+    "name": "UART Master",
+    "type": "slave"
+  },
+  {
+    "id": "i2c",
+    "name": "I2C Master",
+    "type": "slave"
+  },
+  {
+    "id": "timer",
+    "name": "Timer",
+    "type": "slave"
+  },
+  {
+    "id": "pwm",
+    "name": "PWM Controller",
+    "type": "slave"
+  },
+  {
+    "id": "clkctrl",
+    "name": "Clock Control",
+    "type": "slave"
+  }
+]

@@ -1,0 +1,442 @@
+[
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "AHB2APB",
+    "bus_id": "ARMAHBL",
+    "category": "apbbridge",
+    "bridging_to": "ARMAPB",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "AHB2APB",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 1,
+    "vid": 1,
+    "id": "CORTEXM0_EF01",
+    "bus_id": "ARMAHBL",
+    "category": "processor",
+    "memory_map": false,
+    "irq": false,
+    "hidden": true,
+    "editor_info": {
+      "default_placement_level": 0,
+      "color": "teal"
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "CORTEXM0_EF01",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 1,
+    "vid": 1,
+    "id": "CORTEXM0_EF01",
+    "bus_id": "ARMAHBL",
+    "category": "processor",
+    "memory_map": false,
+    "irq": false,
+    "hidden": true,
+    "editor_info": {
+      "default_placement_level": 0,
+      "color": "teal"
+    },
+    "version": "1.1",
+    "type": "soft",
+    "top_module": "CORTEXM0INTEGRATION",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "AHBCLKCTRL",
+    "bus_id": "ARMAHBL",
+    "category": "clkctrl",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0,
+      "color": "orange"
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "AHBCLKCTRL",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 3,
+    "vid": 3,
+    "id": "XSPRAMBLP_4096X32_M16P",
+    "bus_id": "ARMAHBL",
+    "category": "sram",
+    "bridging_to": null,
+    "memory_map": true,
+    "irq": false,
+    "hidden": true,
+    "editor_info": {
+      "attachable": false,
+      "default_placement_level": 0,
+      "color": "teal"
+    },
+    "version": "1.0",
+    "type": "hard",
+    "process": "EFXH018D",
+    "operating_voltages": [
+      1.8
+    ],
+    "top_module": "XSPRAMBLP_4096X32_M16P",
+    "options": [
+      {
+        "id": "mem_size",
+        "name": "Memory Size",
+        "type": "selection",
+        "values": [
+          "16KB",
+          "32KB",
+          "48KB",
+          "64KB"
+        ],
+        "default": 0
+      }
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "AHBQSPIFI",
+    "bus_id": "ARMAHBL",
+    "category": "uart",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "hard",
+    "process": "EFXH018D",
+    "operating_voltages": [
+      3.3
+    ],
+    "top_module": "AHBQSPIFI",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "AHB2GPIO",
+    "bus_id": "ARMAHBL",
+    "category": "gpio",
+    "bridging_to": null,
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "AHB2GPIO",
+    "options": [
+      {
+        "id": "pin_size",
+        "name": "Number of pins",
+        "type": "selection",
+        "values": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "default_index": 3
+      }
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "AHB2SPI",
+    "bus_id": "ARMAHBL",
+    "category": "spi",
+    "bridging_to": null,
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "AHB2SPI",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APBUART",
+    "bus_id": "ARMAPB",
+    "category": "uart",
+    "memory_map": true,
+    "irq": true,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "APBUART",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2SPI",
+    "bus_id": "ARMAPB",
+    "category": "spi",
+    "memory_map": true,
+    "irq": true,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "APB2SPI",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2I2C",
+    "bus_id": "ARMAPB",
+    "category": "i2c",
+    "memory_map": true,
+    "irq": true,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "APB2I2C",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2DAC",
+    "bus_id": "ARMAPB",
+    "category": "dac",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "hard",
+    "process": "EFXH018D",
+    "operating_voltages": [
+      1.8,
+      3.3
+    ],
+    "top_module": "APB2DAC",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2ADC",
+    "bus_id": "ARMAPB",
+    "category": "adc",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "hard",
+    "process": "EFXH018D",
+    "operating_voltages": [
+      1.8,
+      3.3
+    ],
+    "top_module": "APB2ADC",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2BG",
+    "bus_id": "ARMAPB",
+    "category": "bg",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "hard",
+    "process": "EFXH018D",
+    "operating_voltages": [
+      3.3
+    ],
+    "top_module": "APB2BG",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2CMP",
+    "bus_id": "ARMAPB",
+    "category": "comp",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "hard",
+    "process": "EFXH018D",
+    "operating_voltages": [
+      1.8
+    ],
+    "top_module": "APB2CMP",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APBGPIO",
+    "bus_id": "ARMAPB",
+    "category": "gpio",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "APBGPIO",
+    "options": [
+      {
+        "id": "pin_size",
+        "name": "Number of pins",
+        "type": "selection",
+        "values": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "default_index": 3
+      }
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APBGPIO",
+    "bus_id": "ARMAPB",
+    "category": "gpio",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.1",
+    "type": "soft",
+    "top_module": "APBGPIO",
+    "options": [
+      {
+        "id": "pin_size",
+        "name": "Number of pins",
+        "type": "selection",
+        "values": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "default_index": 3
+      }
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2TMR",
+    "bus_id": "ARMAPB",
+    "category": "timer",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "APB2TMR",
+    "options": [
+
+    ]
+  },
+  {
+    "uid": 0,
+    "vid": 0,
+    "id": "APB2PWM",
+    "bus_id": "ARMAPB",
+    "category": "pwm",
+    "memory_map": true,
+    "irq": false,
+    "hidden": false,
+    "editor_info": {
+      "default_placement_level": 0
+    },
+    "version": "1.0",
+    "type": "soft",
+    "top_module": "APB2PWM",
+    "options": [
+
+    ]
+  }
+]

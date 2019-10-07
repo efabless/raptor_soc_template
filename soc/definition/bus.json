@@ -1,0 +1,347 @@
+[
+  {
+    "id": "ARMAHBL",
+    "vendor_id": 1,
+    "name": "AHB-Lite",
+    "type": "multiplexed",
+    "signals": [
+      {
+        "name": "HCLK",
+        "width": "1"
+      },
+      {
+        "name": "HRESETn",
+        "width": "1"
+      },
+      {
+        "name": "HADDR",
+        "width": "32"
+      },
+      {
+        "name": "HWRITE",
+        "width": "1"
+      },
+      {
+        "name": "HSIZE",
+        "width": "3"
+      },
+      {
+        "name": "HBURST",
+        "width": "3"
+      },
+      {
+        "name": "HPROT",
+        "width": "4"
+      },
+      {
+        "name": "HTRANS",
+        "width": "2"
+      },
+      {
+        "name": "HMASTLOCK",
+        "width": "1"
+      },
+      {
+        "name": "HWDATA",
+        "width": "32"
+      },
+      {
+        "name": "HREADY",
+        "width": "1"
+      },
+      {
+        "name": "HRESP",
+        "width": "1"
+      },
+      {
+        "name": "HRDATA",
+        "width": "32"
+      },
+      {
+        "name": "HREADYOUT",
+        "width": "1"
+      },
+      {
+        "name": "HSEL",
+        "width": "1"
+      }
+    ],
+    "ports": [
+      {
+        "name": "HCLK",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "HRESETn",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "HADDR",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HWRITE",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HSIZE",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HBURST",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HPROT",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HTRANS",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HMASTLOCK",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HWDATA",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "HREADY",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "HRESP",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "HRDATA",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "HCLK",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HRESETn",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HADDR",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HWRITE",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HSIZE",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HBURST",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HPROT",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HTRANS",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HMASTLOCK",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HWDATA",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "HREADYOUT",
+        "association": "slave",
+        "direction": "output"
+      },
+      {
+        "name": "HRESP",
+        "association": "slave",
+        "direction": "output"
+      },
+      {
+        "name": "HRDATA",
+        "association": "slave",
+        "direction": "output"
+      },
+      {
+        "name": "HSEL",
+        "association": "slave",
+        "direction": "input"
+      }
+    ]
+  },
+  {
+    "id": "ARMAPB",
+    "vendor_id": 1,
+    "name": "APB-Lite",
+    "type": "multiplexed",
+    "signals": [
+      {
+        "name": "PCLK",
+        "width": "1"
+      },
+      {
+        "name": "PRESETn",
+        "width": "1"
+      },
+      {
+        "name": "PENABLE",
+        "width": "1"
+      },
+      {
+        "name": "PWRITE",
+        "width": "1"
+      },
+      {
+        "name": "PADDR",
+        "width": "1"
+      },
+      {
+        "name": "PWDATA",
+        "width": "32"
+      },
+      {
+        "name": "PREADY",
+        "width": "1"
+      },
+      {
+        "name": "PRDATA",
+        "width": "32"
+      },
+      {
+        "name": "PSLVERR",
+        "width": "1"
+      },
+      {
+        "name": "PSEL",
+        "width": "1"
+      }
+    ],
+    "ports": [
+      {
+        "name": "PCLK",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "PRESETn",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "PENABLE",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "PWRITE",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "PADDR",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "PWDATA",
+        "association": "master",
+        "direction": "output"
+      },
+      {
+        "name": "PREADY",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "PRDATA",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "PSLVERR",
+        "association": "master",
+        "direction": "input"
+      },
+      {
+        "name": "PCLK",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "PRESETn",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "PSEL",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "PENABLE",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "PWRITE",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "PWDATA",
+        "association": "slave",
+        "direction": "input"
+      },
+      {
+        "name": "PREADY",
+        "association": "slave",
+        "direction": "output"
+      },
+      {
+        "name": "PRDATA",
+        "association": "slave",
+        "direction": "output"
+      },
+      {
+        "name": "PSLVERR",
+        "association": "slave",
+        "direction": "output"
+      }
+    ]
+  }
+]
